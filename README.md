@@ -2,7 +2,7 @@
 
 ![Library system for AutoLISP on Visual LISP IDE](img/include.png)
 
-# Overview
+# INTRODUCTION
 
 AutoLISP has a load function that allows you to load the required functions from other files. But since it is a simple operation, you must always keep mind of which files are loaded. Therefore, a library system that automatically loads necessary functions cannot be used in the Visual LISP IDE. This library system is built by defining an include function that extends the load function. The main difference between the include function and load function is that the already loaded files are remembered and not loaded unnecessarily.
 
@@ -12,7 +12,7 @@ When this system is built, functions are automatically loaded, but it is difficu
 
 The list of function files loaded and stored by the include function can be exported to the Visual LISP project file format. This can be used as a resource in the application definition file when you finish up your program as [Separate-namespace VLX applications].
 
-# About license
+# ABOUT LICENSE
 
 The function source code is a MIT license. The MIT license is one of the open source software licenses that has few restrictions.
 
@@ -66,7 +66,7 @@ Register this file at the top of the project file of the program you are creatin
 
 ![setting-project](img/project-window.png)
 
-## Include Statement
+### Include Statement
 
 4. Write the include function statement in your program.
 
@@ -84,7 +84,7 @@ The first argument of the include function is the name of the function that requ
 
 ### Create Project File of Library Function List
 
-5. Use the exportresouce function to export a list of library functions used to a project file.
+5. Use the exportresouce function to export a list of library functions as a project file.
 
 When your program is completed, write a list of functions used from the library to a Visual LISP project file to create your [Separate-namespace VLX applications]. Since this process writes out what the include function loaded during the development process, unnecessary functions may have been loaded during trial and error. Therefore, reset the AutoLISP execution environment once, load your program again, and make sure that unnecessary functions are not included. When the exportresouce function is executed from [Console], a dialog to save the file appears. Specify the file name and save.
 

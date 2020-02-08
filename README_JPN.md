@@ -66,7 +66,7 @@ include 関数はライブラリから関数をロードします。この関数
 
 ![setting-project](img/project-window.png)
 
-## include ステートメント
+### include ステートメント
 
 4. あなたのプログラムに include 関数のステートメント書いておく。
 

@@ -168,7 +168,7 @@ The first argument of the include function is the name of the function that requ
 
 ### Create Project File of Library Function List
 
-1. Use the exportresouce function to export a list of library functions as a project file.
+1. Use the exportLib function to export a list of library functions as a project file.
 
 When your program is completed, write a list of functions used from the library to a Visual LISP project file to create your [Separate-namespace VLX applications]. Since this process writes out what the include function loaded during the development process, unnecessary functions may have been loaded during trial and error. Therefore, reset the AutoLISP execution environment once, load your program again, and make sure that unnecessary functions are not included. When the exportLib function is executed from [Console], a dialog to save the file appears. Specify the file name and save.
 
